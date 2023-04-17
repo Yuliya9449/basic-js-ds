@@ -41,7 +41,8 @@ class BinarySearchTree {
             node.right = addNode(node.right, data)
         }
 
-        return node;
+        return node;//узел возвращается в вызвавшую функцию, а т.к. она сама себя вызывала,
+        // то он возвращается в предыдущий уровень рекурсии
     }
   }
 
